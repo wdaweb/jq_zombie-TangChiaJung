@@ -29,7 +29,7 @@
 			width: 500px;
 			height: 850px;
 			/* background-color: rgb(97, 83, 157); */
-			background: linear-gradient(90deg, rgb(97, 83, 157) 0%, rgb(121, 114, 154), rgb(97, 83, 157) 5%, rgb(97, 83, 157) 95%, rgb(195, 171, 225) 100%);
+			background: linear-gradient(90deg, rgb(97, 83, 157) 0%, rgb(121, 114, 154), rgb(97, 83, 157) 4%, rgb(97, 83, 157) 96%, rgb(195, 171, 225) 100%);
 			border-radius: 25px 25px 15% 15%;
 			padding-top: 40px;
 			/* border: 5px solid rgb(63, 55, 134); */
@@ -53,24 +53,20 @@
 		#game {
 			width: 400px;
 			height: 250px;
-
 			background: rgb(25, 77, 36);
 			overflow: hidden;
 			position: relative;
-			cursor: url(/pokemon-8-bit.png) 50 50, auto;
 			margin: auto;
 			box-shadow: inset 2px 0px 10px rgba(0, 0, 0, .8),
 				inset -2px -2px 10px rgba(0, 0, 0, .8);
 		}
 
 		#game_out {
-			
 			width: 400px;
 			height: 300px;
 			background: rgb(25, 77, 36);
 			overflow: hidden;
 			position: relative;
-			cursor: url(/pokemon-8-bit.png) 50 50, auto;
 			margin: auto;
 			box-shadow: inset 2px 2px 10px rgba(0, 0, 0, .8),
 				inset -2px -2px 10px rgba(0, 0, 0, .8);
@@ -103,28 +99,31 @@
 
 		}
 
+
 		#btn-start {
 			margin-top: 10px;
 			width: 60px;
 			height: 60px;
-			font-size: 23px;
+			color: azure;
+			font-size: 20px;
 			font-family: 'Roboto', sans-serif;
 			font-weight: 600;
 			border-radius: 50%;
 			position: absolute;
-			background-color: gray;
+			background: radial-gradient(  rgb(0, 0, 0) 50%, rgb(127, 127, 127) 80%, rgb(155, 155, 155) 100%);;
 			right: 13%;
-			top: 55%;
+			top: 60%;
 			border: none;
-			box-shadow: inset 2px 2px 10px rgba(0, 0, 0, .5),
-				inset -2px -2px 10px rgba(0, 0, 0, 0.648),
-				inset -2px -2px 10px rgba(255, 255, 255, 0.915),
+			box-shadow: 
+			inset 2px 2px 5px rgba(0, 0, 0, .5),
+				inset -2px -2px 2px rgba(0, 0, 0, 0.648),
+				inset -2px -2px 2px rgba(10, 10, 10, 0.915),
 				2px 2px 5px rgba(0, 0, 0, .5);
 		}
 		#btn-start:hover{
+			background: radial-gradient(  rgb(0, 0, 0) 50%, rgb(198, 197, 197) 80%, rgb(124, 122, 122) 100%);;
 			color: red;
-			
-			background: gold;
+			cursor: pointer;
 		}
 
 		#btn_a {
@@ -136,13 +135,14 @@
 			font-family: '';
 			border-radius: 50%;
 			position: absolute;
-			background-color: gray;
+			background: radial-gradient(  rgb(0, 0, 0) 50%, rgb(127, 127, 127) 80%, rgb(155, 155, 155) 100%);
 			right: 30%;
-			top: 60%;
+			top: 65%;
 			border: none;
-			box-shadow: inset 2px 2px 10px rgba(0, 0, 0, .5),
-				inset -2px -2px 10px rgba(0, 0, 0, 0.648),
-				inset -2px -2px 10px rgba(255, 255, 255, 0.915),
+			box-shadow: 
+			inset 2px 2px 5px rgba(0, 0, 0, .5),
+				inset -2px -2px 2px rgba(0, 0, 0, 0.648),
+				inset -2px -2px 2px rgba(10, 10, 10, 0.915),
 				2px 2px 5px rgba(0, 0, 0, .5);
 		}
 
@@ -150,7 +150,7 @@
 			width: 40px;
 			height: 160px;
 			background-color: gray;
-			background: linear-gradient(90deg, rgb(241, 241, 241) 0%, gray 5%, gray, gray 95%, rgb(201, 200, 200) 100%);
+			background: linear-gradient(90deg, rgb(241, 241, 241) 0%, gray 5%, gray, gray 90%, rgb(201, 200, 200) 100%);
 			position: relative;
 			top: 5%;
 			left: 20%;
@@ -158,8 +158,6 @@
 				inset -5px -5px 10px rgba(0, 0, 0, .3),
 				3px 0 10px rgba(0, 0, 0, .5),
 				-3px -3px 10px rgba(0, 0, 0, .5);
-
-
 			border-radius: 10px;
 			transform: rotate(90deg)
 		}
@@ -169,7 +167,7 @@
 			width: 45px;
 			height: 160px;
 			/* background-color: gray; */
-			background: linear-gradient(90deg, rgb(241, 241, 241) 0%, gray 5%, gray, gray 95%, rgb(201, 200, 200) 100%);
+			background: linear-gradient(90deg, rgb(70, 70, 70) 0%, rgb(0, 0, 0) 20%, rgb(0, 0, 0), rgb(0, 0, 0) 80%, rgb(79, 79, 79) 100%);
 			position: absolute;
 			top: 0%;
 			left: 0%;
@@ -177,7 +175,6 @@
 				inset -5px -5px 10px rgba(0, 0, 0, .3),
 				3px 0 5px rgba(0, 0, 0, .8),
 				-3px -3px 5px rgba(0, 0, 0, .8);
-
 			border-radius: 10px;
 			transform: rotate(90deg);
 
@@ -193,10 +190,7 @@
 			top: 0%;
 			left: 0%;
 			border-radius: 10px;
-
-			background: linear-gradient(rgb(241, 241, 241) 0%, gray 5%, gray, gray 95%, rgb(201, 200, 200) 100%);
-
-
+			background: linear-gradient(90deg, rgb(70, 70, 70) 0%, rgb(0, 0, 0) 20%, rgb(0, 0, 0), rgb(0, 0, 0) 80%, rgb(79, 79, 79) 100%);
 		}
 
 		#cr {
@@ -206,7 +200,7 @@
 			position: relative;
 			border-radius: 50%;
 			background: gray;
-			background: linear-gradient(45deg, rgb(125, 125, 125), rgb(150, 150, 150), rgb(89, 89, 89));
+			background: radial-gradient(  rgb(34, 34, 34) 50%, rgb(0, 0, 0) 80%, rgb(24, 24, 24) 90%);
 			box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.388),
 				inset -5px -5px 10px rgba(0, 0, 0, .2),
 				5px 5px 10px rgba(0, 0, 0, 0.146),
@@ -215,16 +209,43 @@
 			left: 19.5%;
 		}
 
-
-
-
-
-
-
+		#mini_btn{
+			background: radial-gradient(rgb(0, 0, 0) 60%, rgb(103, 103, 103) 90%, rgb(133, 133, 133) 100%);
+			width: 15px;
+			height: 50px;
+			border-radius: 100px;
+			transform: rotate(90deg);
+			position: relative;
+			top:8%;
+			left: 40%;
+			box-shadow: inset 5px 0px 10px rgba(0, 0, 0, .3),
+				inset -5px -5px 10px rgba(0, 0, 0, .3),
+				3px 0 5px rgba(0, 0, 0, .8),
+				-3px -3px 5px rgba(0, 0, 0, .8);
+		}
+		#mini_btn::before{
+			background: radial-gradient(  rgb(0, 0, 0) 60%, rgb(103, 103, 103) 90%, rgb(133, 133, 133) 100%);
+			content: '';
+			width: 15px;
+			height: 50px;
+			border-radius: 100px;
+			position: absolute;
+			bottom:130%;
+			left: 0;
+			box-shadow: inset 5px 0px 10px rgba(0, 0, 0, .3),
+				inset -5px -5px 10px rgba(0, 0, 0, .3),
+				3px 0 5px rgba(0, 0, 0, .8),
+				-3px -3px 5px rgba(0, 0, 0, .8);
+		}
 
 		.icon-list {
 			/*上排的pokemon*/
 			text-align: center;
+		}
+		#v img{
+			width: 150px;
+			position: absolute;
+			right: 5%;
 		}
 	</style>
 </head>
@@ -241,7 +262,6 @@
 		<i class="nes-squirtle"></i>
 		<i class="nes-bulbasaur"></i>
 		<i class="nes-charmander"></i>
-		<i class="nes-squirtle"></i>
 		<i class="nes-pokeball"></i>
 
 	</section>
@@ -263,6 +283,8 @@
 			<div id="cr"></div>
 			<input type="button" value="start" id="btn-start">
 			<div id="btn_a"></div>
+			<div id="mini_btn"></div>
+			<div id="v"><img src="v.png"></div>
 		</div>
 	</div>
 	<hr>
@@ -312,7 +334,7 @@
 				/*設定出現隨機頻率=random*/
 				const random = Math.round(Math.random() * 9)
 				/*出現機率+數量限制*/
-				if (random > 5 && $('#gmae i').length < 2) {
+				if (random > 3 && $('#gmae i').length < 2) {
 
 					const top = Math.round(Math.random() * 80) + '%'
 					const left = Math.round(Math.random() * 80) + '%'
@@ -353,9 +375,9 @@
 			$(this).attr('src', 'pokemon-8-bit.png')
 			$(this).removeClass('charmander').addClass('pokemon-8-bit')
 			$(this).stop()
-			setTimeout(function(){
+			setTimeout(function(){/*讓寶貝球消失避免影響畫面*/
 				$('.pokemon-8-bit').remove()
-			},500)
+			},800)
 
 			score++
 			$('#text-score').text(score)
