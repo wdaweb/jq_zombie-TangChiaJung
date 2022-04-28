@@ -11,12 +11,14 @@
 	<link href=" https://unpkg.com/nes.css@latest/css/nes.min.css " rel=" stylesheet ">
 	<link href=" https://unpkg.com/nes.css/css/nes-core.min.css " rel="樣式表">
 	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap"
+		rel="stylesheet">
 	<style>
 		body {
 			background: url(bg.png) no-repeat fixed;
 			background-position: center;
 			background-size: cover;
+			overflow: hidden;
 		}
 
 		#al {
@@ -30,7 +32,7 @@
 			height: 850px;
 			/* background-color: rgb(97, 83, 157); */
 			background: linear-gradient(90deg, rgb(97, 83, 157) 0%, rgb(121, 114, 154), rgb(97, 83, 157) 4%, rgb(97, 83, 157) 96%, rgb(195, 171, 225) 100%);
-			border-radius: 25px 25px 15% 15%;
+			border-radius: 25px 25px 10% 10%;
 			padding-top: 40px;
 			/* border: 5px solid rgb(63, 55, 134); */
 			box-shadow: inset 10px 10px 10px rgba(39, 39, 81, 0.8),
@@ -47,7 +49,7 @@
 			padding-top: 20px;
 			color: rgb(124, 124, 124);
 			text-align: center;
-			
+
 		}
 
 		#game {
@@ -81,7 +83,7 @@
 			/*無法拖曳*/
 			-webkit-user-drag: none;
 		}
-		
+
 		.pokemon-8-bit {
 			/*無法被選取*/
 			user-select: none;
@@ -110,18 +112,21 @@
 			font-weight: 600;
 			border-radius: 50%;
 			position: absolute;
-			background: radial-gradient(  rgb(0, 0, 0) 50%, rgb(127, 127, 127) 80%, rgb(155, 155, 155) 100%);;
+			background: radial-gradient(rgb(0, 0, 0) 50%, rgb(127, 127, 127) 80%, rgb(155, 155, 155) 100%);
+			;
 			right: 13%;
 			top: 60%;
 			border: none;
-			box-shadow: 
-			inset 2px 2px 5px rgba(0, 0, 0, .5),
+			box-shadow:
+				inset 2px 2px 5px rgba(0, 0, 0, .5),
 				inset -2px -2px 2px rgba(0, 0, 0, 0.648),
 				inset -2px -2px 2px rgba(10, 10, 10, 0.915),
 				2px 2px 5px rgba(0, 0, 0, .5);
 		}
-		#btn-start:hover{
-			background: radial-gradient(  rgb(0, 0, 0) 50%, rgb(198, 197, 197) 80%, rgb(124, 122, 122) 100%);;
+
+		#btn-start:hover {
+			background: radial-gradient(rgb(0, 0, 0) 50%, rgb(198, 197, 197) 80%, rgb(124, 122, 122) 100%);
+			;
 			color: red;
 			cursor: pointer;
 		}
@@ -135,12 +140,12 @@
 			font-family: '';
 			border-radius: 50%;
 			position: absolute;
-			background: radial-gradient(  rgb(0, 0, 0) 50%, rgb(127, 127, 127) 80%, rgb(155, 155, 155) 100%);
+			background: radial-gradient(rgb(0, 0, 0) 50%, rgb(127, 127, 127) 80%, rgb(155, 155, 155) 100%);
 			right: 30%;
 			top: 65%;
 			border: none;
-			box-shadow: 
-			inset 2px 2px 5px rgba(0, 0, 0, .5),
+			box-shadow:
+				inset 2px 2px 5px rgba(0, 0, 0, .5),
 				inset -2px -2px 2px rgba(0, 0, 0, 0.648),
 				inset -2px -2px 2px rgba(10, 10, 10, 0.915),
 				2px 2px 5px rgba(0, 0, 0, .5);
@@ -200,7 +205,7 @@
 			position: relative;
 			border-radius: 50%;
 			background: gray;
-			background: radial-gradient(  rgb(34, 34, 34) 50%, rgb(0, 0, 0) 80%, rgb(24, 24, 24) 90%);
+			background: radial-gradient(rgb(34, 34, 34) 50%, rgb(0, 0, 0) 80%, rgb(24, 24, 24) 90%);
 			box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.388),
 				inset -5px -5px 10px rgba(0, 0, 0, .2),
 				5px 5px 10px rgba(0, 0, 0, 0.146),
@@ -209,28 +214,29 @@
 			left: 19.5%;
 		}
 
-		#mini_btn{
+		#mini_btn {
 			background: radial-gradient(rgb(0, 0, 0) 60%, rgb(103, 103, 103) 90%, rgb(133, 133, 133) 100%);
 			width: 15px;
 			height: 50px;
 			border-radius: 100px;
 			transform: rotate(90deg);
 			position: relative;
-			top:8%;
+			top: 8%;
 			left: 40%;
 			box-shadow: inset 5px 0px 10px rgba(0, 0, 0, .3),
 				inset -5px -5px 10px rgba(0, 0, 0, .3),
 				3px 0 5px rgba(0, 0, 0, .8),
 				-3px -3px 5px rgba(0, 0, 0, .8);
 		}
-		#mini_btn::before{
-			background: radial-gradient(  rgb(0, 0, 0) 60%, rgb(103, 103, 103) 90%, rgb(133, 133, 133) 100%);
+
+		#mini_btn::before {
+			background: radial-gradient(rgb(0, 0, 0) 60%, rgb(103, 103, 103) 90%, rgb(133, 133, 133) 100%);
 			content: '';
 			width: 15px;
 			height: 50px;
 			border-radius: 100px;
 			position: absolute;
-			bottom:130%;
+			bottom: 130%;
 			left: 0;
 			box-shadow: inset 5px 0px 10px rgba(0, 0, 0, .3),
 				inset -5px -5px 10px rgba(0, 0, 0, .3),
@@ -242,10 +248,17 @@
 			/*上排的pokemon*/
 			text-align: center;
 		}
-		#v img{
+
+		#v img {
 			width: 150px;
 			position: absolute;
 			right: 5%;
+		}
+
+		.nes-table-responsive {
+			position: absolute;
+			top: 20%;
+			right: 10%;
 		}
 	</style>
 </head>
@@ -277,7 +290,13 @@
 
 				</div>
 				<br>
-				Game 
+				Game <span style="
+				background: linear-gradient(90deg,red , red 20%,purple 20%,purple 40%, green 40% ,green 60%,yellow 60%, yellow 80%,blue 80%) ; 
+				color:transparent;
+				background-clip:text;
+				-webkit-text-fill-color:transparent;
+				-webkit-background-clip: text;background-clip:text;">
+					color</span>
 			</div>
 			<div id="btn_top"></div>
 			<div id="cr"></div>
@@ -287,9 +306,30 @@
 			<div id="v"><img src="v.png"></div>
 		</div>
 	</div>
-	<hr>
+	<div class="nes-table-responsive" ">
+		<table class=" nes-table is-bordered is-dark">
+		<thead>
+			<tr>
+				<th>HeroName</th>
+				<th>BestPoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><span id="highnametext">--</span></td>
+				<td><span id="highscoretext">0</span></td>
+			</tr>
 
+		</tbody>
+		</table>
 	</div>
+	</div>
+
+
+
+
+
+
 
 
 
@@ -300,9 +340,24 @@
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 	<script>
+		const highNameText = document.getElementById('highnametext')
+		const highScoreText = document.getElementById('highscoretext')
+
+
 		let score = 0
 		let countdown = 10
 		let timer = 0
+		let highscore = { name: '', score: 0 }
+		let be = localStorage.getItem('best')
+
+		if (be) {
+			be = JSON.parse(be)
+			highscore.name = be.name
+			highscore.score = be.score
+			highNameText.innerText = highscore.name
+			highScoreText.innerText = highscore.score
+		}
+
 
 
 		function move(charmander) { /*移動 類似遞迴*/
@@ -346,14 +401,10 @@
 					const jeini = $(`<img src="jeini.png" class="charmander" style="top:${top2}; left:${left2}" >`)
 					const mio = $(`<img src="mio.png" class="charmander" style="top:${top3}; left:${left3}" >`)
 
-					$('#game').append(charmander,jeini,mio)/*增加*/
+					$('#game').append(charmander, jeini, mio)/*增加*/
 					move(charmander)/*執行移動function*/
 					move(jeini)/*執行移動function*/
 					move(mio)/*執行移動function*/
-					// move(charmander)
-					// move(squirtle)
-
-
 				}
 
 				if (countdown <= 0) {
@@ -366,22 +417,34 @@
 						title: '遊戲結束',
 						text: `獲得${score}分`
 					})
+					if (score > highscore.score) {
+						const inputName = prompt(`你打贏了冠軍!!請輸入名字`)
+						highscore.score = score
+						highscore.name = inputName
+						highNameText.innerText = highscore.name
+						highScoreText.innerText = highscore.score
+						localStorage.setItem('best', JSON.stringify(highscore))
+					}
 				}
-			},1000);
+
+			}, 1000);
 		})
+
+
 
 
 		$('#game').on('click', '.charmander', function () {
 			$(this).attr('src', 'pokemon-8-bit.png')
 			$(this).removeClass('charmander').addClass('pokemon-8-bit')
 			$(this).stop()
-			setTimeout(function(){/*讓寶貝球消失避免影響畫面*/
+			setTimeout(function () {/*讓寶貝球消失避免影響畫面*/
 				$('.pokemon-8-bit').remove()
-			},800)
+			}, 800)
 
 			score++
 			$('#text-score').text(score)
 		})
+
 
 
 	</script>
